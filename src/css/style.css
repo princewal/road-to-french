@@ -1,8 +1,43 @@
 ﻿@import "tailwindcss";
 
+@theme {
+  --color-theme-primary: #b2622d;
+  --color-theme-primary-hover: #9a5727;
+  --color-theme-primary-strong: #7f431a;
+  --color-theme-primary-soft: #f2e3d7;
+  --color-theme-primary-soft-strong: #d9b08d;
+  --color-theme-primary-faint: #f8f1ea;
+  --color-theme-primary-muted: #c77f52;
+  --color-theme-bg: #f8f8f8;
+  --color-theme-surface: #ffffff;
+  --color-theme-surface-soft: #f6efe9;
+  --color-theme-surface-alt: #f4f4f6;
+  --color-theme-text: #111827;
+  --color-theme-text-soft: #475569;
+  --color-theme-border: #e2e8f0;
+  --color-theme-footer: #332e54;
+  --color-theme-shadow: rgba(17, 19, 23, 0.05);
+  --font-theme-sans: "Roboto", sans-serif;
+}
+
 :root {
-  --accent-color: #ceccff;
-  --dark-color: #111827;
+  --theme-primary: #b2622d;
+  --theme-primary-hover: #9a5727;
+  --theme-primary-strong: #7f431a;
+  --theme-primary-soft: #f2e3d7;
+  --theme-primary-soft-strong: #d9b08d;
+  --theme-primary-faint: #f8f1ea;
+  --theme-primary-muted: #c77f52;
+  --theme-bg: #f8f8f8;
+  --theme-surface: #ffffff;
+  --theme-surface-soft: #f6efe9;
+  --theme-surface-alt: #f4f4f6;
+  --theme-text: #111827;
+  --theme-text-soft: #475569;
+  --theme-border: #e2e8f0;
+  --theme-footer: #332e54;
+  --theme-shadow: rgba(17, 19, 23, 0.05);
+  --theme-shadow-strong: rgba(17, 19, 23, 0.08);
   --section-space: clamp(4rem, 5vw, 5.5rem);
   --section-space-sm: clamp(2.5rem, 4vw, 3.5rem);
 }
@@ -35,10 +70,10 @@ main > section {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-theme-sans);
   letter-spacing: 0.01625rem;
-  background: #f8f8f8;
-  color: #1f2937;
+  background: var(--theme-bg);
+  color: var(--theme-text-soft);
 }
 
 body.preloader-site {
@@ -66,7 +101,7 @@ input {
 
 .nav-link:hover,
 .nav-link.active {
-  color: #5550b7;
+  color: var(--theme-primary-strong);
 }
 
 .nav-link::after {
@@ -76,7 +111,7 @@ input {
   bottom: -0.35rem;
   width: 100%;
   height: 2px;
-  background: var(--accent-color);
+  background: var(--theme-primary);
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.2s ease;
@@ -95,112 +130,8 @@ input {
 }
 
 .tab-button.active {
-  color: #111827;
-  border-color: var(--accent-color);
-}
-
-.brand {
-  opacity: 0.55;
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
-}
-
-.brand:hover {
-  opacity: 1;
-  transform: translateY(-2px);
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1.25rem;
-  background: #f1f1f1;
-  box-shadow: 0 20px 45px rgba(17, 19, 23, 0.06);
-}
-
-.gallery-item a {
-  display: block;
-  position: relative;
-  height: 100%;
-}
-
-.gallery-item img {
-  width: 100%;
-  min-height: 320px;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.35s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.04);
-}
-
-.gallery-caption {
-  position: absolute;
-  inset: auto 0 0 0;
-  padding: 1rem 1.25rem;
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.04rem;
-}
-
-.video-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 9999px;
-  background: rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(4px);
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease;
-}
-
-.video-button:hover {
-  transform: scale(1.06);
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.zoom-effect {
-  position: relative;
-  overflow: hidden;
-}
-
-.zoom-effect img {
-  transition: transform 0.6s ease;
-}
-
-.zoom-effect:hover img {
-  transform: scale(1.08);
-}
-
-.footer-link {
-  color: #c7c3dc;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  transition: color 0.2s ease;
-}
-
-.footer-link:hover,
-.social-link:hover {
-  color: #ffffff;
-}
-
-.social-link {
-  color: #c7c3dc;
-  transition: color 0.2s ease;
+  color: var(--theme-text);
+  border-color: var(--theme-primary);
 }
 
 .preloader-wrapper {

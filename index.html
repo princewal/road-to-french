@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Modern creative agency website" />
     <meta name="author" content="Road to French" />
-    <title>Codeo | Creative Agency</title>
+    <title>Road to French</title>
+
+    <link rel="icon" type="image/png" href="/src/assets/images/logo.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +21,7 @@
     />
   </head>
 
-  <body class="bg-[#f8f8f8] text-slate-800 antialiased">
+  <body class="bg-theme-bg text-slate-800 antialiased">
     <div class="preloader-wrapper">
       <div class="preloader"></div>
     </div>
@@ -35,61 +37,42 @@
               alt="Codeo logo"
               class="h-10 w-auto object-contain"
             />
+            <span class="text-sm font-bold whitespace-nowrap"
+              >Road to French</span
+            >
           </a>
 
           <div class="hidden items-center gap-8 lg:flex">
             <a
               href="#"
-              class="nav-link active text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
+              class="nav-link active text-sm font-black uppercase tracking-[0.18em] text-theme-text"
               >Home</a
             >
             <a
               href="#about"
               class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-              >About</a
+              >TCF/TEF · PR</a
             >
             <a
               href="#portfolio"
               class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-              >Works</a
+              >Federal SLE</a
             >
             <a
-              href="#blog"
+              href="#"
               class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-              >Blog</a
+              >Private Coaching</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
+              >FAQ</a
             >
             <a
               href="#contact"
               class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
               >Contact</a
             >
-            <a
-              href="https://templatesjungle.gumroad.com/l/codeo-html-website-template-for-agencies"
-              target="_blank"
-              rel="noreferrer"
-              class="text-sm font-black uppercase tracking-[0.18em] text-[#111827] underline decoration-2 underline-offset-4"
-              >Get Pro</a
-            >
-          </div>
-
-          <div class="hidden items-center gap-3 lg:flex">
-            <a
-              href="#"
-              class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 transition hover:border-[#ceccff] hover:text-[#111827]"
-              aria-label="Account"
-            >
-              <iconify-icon
-                icon="healthicons:person"
-                class="text-xl"
-              ></iconify-icon>
-            </a>
-            <button
-              type="button"
-              class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 transition hover:border-[#ceccff] hover:text-[#111827]"
-              aria-label="Search"
-            >
-              <iconify-icon icon="tabler:search" class="text-xl"></iconify-icon>
-            </button>
           </div>
 
           <button
@@ -164,13 +147,13 @@
               <p
                 class="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-slate-700"
               >
-                Creative specialists
+                French coaching specialists . Canada
               </p>
               <h1
-                class="max-w-xl text-5xl font-light uppercase leading-[0.9] tracking-[-0.04em] text-[#111827] sm:text-6xl lg:text-[6rem]"
+                class="max-w-xl text-5xl font-light uppercase leading-[0.9] tracking-[-0.04em] text-theme-text md:text-6xl lg:text-7xl"
               >
-                State of the art
-                <span class="block font-bold text-[#ceccff]">Designs</span>
+                Two roads. One destination:
+                <span class="block font-bold text-theme-primary">French</span>
               </h1>
               <p class="mt-7 max-w-lg text-lg leading-8 text-slate-700">
                 We help ambitious brands build a sharper digital presence
@@ -180,20 +163,20 @@
               <div class="mt-8 flex flex-wrap items-center gap-4">
                 <a
                   href="#contact"
-                  class="inline-flex items-center justify-center rounded-full bg-[#ceccff] px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#111827] transition hover:bg-[#bebcfa]"
+                  class="inline-flex items-center justify-center rounded-full bg-theme-primary px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-theme-text transition hover:bg-theme-primary-hover"
                   >Let’s Talk</a
                 >
                 <a
                   href="#portfolio"
-                  class="inline-flex items-center justify-center rounded-full border border-[#111827]/20 bg-white/80 px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#111827] transition hover:border-[#ceccff] hover:bg-[#f5f4ff]"
-                  >View Work</a
+                  class="inline-flex items-center justify-center rounded-full border border-theme-text/20 bg-white/80 px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-theme-text transition hover:border-theme-primary hover:bg-theme-surface-soft"
+                  >View Certification</a
                 >
               </div>
             </div>
 
             <div class="relative">
               <div
-                class="absolute -left-10 top-6 h-28 w-28 rounded-full bg-[#ceccff]/75 blur-3xl"
+                class="absolute -left-10 top-6 h-28 w-28 rounded-full bg-theme-primary/75 blur-3xl"
               ></div>
               <div
                 class="absolute -right-6 bottom-0 h-28 w-28 rounded-full bg-[#dbeafe]/80 blur-3xl"
@@ -214,13 +197,13 @@
             class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between"
           >
             <h2
-              class="max-w-3xl text-3xl font-semibold leading-tight text-[#111827] sm:text-4xl"
+              class="max-w-3xl text-3xl font-semibold leading-tight text-theme-text sm:text-4xl"
             >
-              Get yourself the best possible online presence for your business.
+              Get yourself the best possible online French language Coaching.
             </h2>
             <a
               href="#contact"
-              class="inline-flex items-center justify-center rounded-full bg-[#ceccff] px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#111827] transition hover:bg-[#bebcfa]"
+              class="inline-flex items-center justify-center rounded-full bg-theme-primary-soft px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#111827] transition hover:bg-theme-primary-soft-strong"
               >Let’s Talk</a
             >
           </div>
@@ -231,7 +214,7 @@
         <div class="grid items-center gap-12 lg:grid-cols-2">
           <div class="relative">
             <div
-              class="absolute -left-8 top-10 h-24 w-24 rounded-full bg-[#ceccff]/60 blur-3xl"
+              class="absolute -left-8 top-10 h-24 w-24 rounded-full bg-theme-primary/60 blur-3xl"
             ></div>
             <img
               src="/src/assets/images/about.png"
@@ -246,7 +229,7 @@
             >
               <button
                 type="button"
-                class="tab-button active text-sm font-black uppercase tracking-[0.2em] text-[#111827]"
+                class="tab-button active text-sm font-black uppercase tracking-[0.2em] text-theme-text"
                 data-tab="about"
               >
                 About us
@@ -287,7 +270,9 @@
                     <span class="text-sm font-medium text-slate-500">25%</span>
                   </div>
                   <div class="h-2.5 overflow-hidden rounded-full bg-slate-200">
-                    <div class="h-full w-[25%] rounded-full bg-[#ceccff]"></div>
+                    <div
+                      class="h-full w-[25%] rounded-full bg-theme-primary-soft"
+                    ></div>
                   </div>
                 </div>
                 <div>
@@ -300,7 +285,9 @@
                     <span class="text-sm font-medium text-slate-500">25%</span>
                   </div>
                   <div class="h-2.5 overflow-hidden rounded-full bg-slate-200">
-                    <div class="h-full w-[25%] rounded-full bg-[#ceccff]"></div>
+                    <div
+                      class="h-full w-[25%] rounded-full bg-theme-primary-soft"
+                    ></div>
                   </div>
                 </div>
                 <div>
@@ -313,7 +300,9 @@
                     <span class="text-sm font-medium text-slate-500">25%</span>
                   </div>
                   <div class="h-2.5 overflow-hidden rounded-full bg-slate-200">
-                    <div class="h-full w-[25%] rounded-full bg-[#ceccff]"></div>
+                    <div
+                      class="h-full w-[25%] rounded-full bg-theme-primary-soft"
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -347,7 +336,10 @@
         </div>
       </section>
 
-      <section id="service" class="relative overflow-hidden bg-[#f2f1ff] py-20">
+      <section
+        id="service"
+        class="relative overflow-hidden bg-theme-primary-faint py-20"
+      >
         <div class="absolute right-0 top-0 hidden h-full w-40 lg:block">
           <img
             src="/src/assets/images/pattern-1.png"
@@ -366,7 +358,7 @@
                 Expertise
               </p>
               <h2
-                class="mt-3 text-3xl font-semibold text-[#111827] sm:text-5xl"
+                class="mt-3 text-3xl font-semibold text-theme-text sm:text-5xl"
               >
                 Our services
               </h2>
@@ -378,7 +370,9 @@
           </div>
 
           <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <article class="group relative overflow-hidden bg-[#ceccff] p-8">
+            <article
+              class="group relative overflow-hidden bg-theme-primary-soft p-8"
+            >
               <p
                 class="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-700"
               >
@@ -391,7 +385,7 @@
                 Experience design tailored to user behavior and brand clarity.
               </p>
               <span
-                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-[#a8a6df]"
+                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/45"
                 >01</span
               >
             </article>
@@ -410,11 +404,13 @@
                 Visual systems that feel premium, consistent, and memorable.
               </p>
               <span
-                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-[#e2e2ea]"
+                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/20"
                 >02</span
               >
             </article>
-            <article class="group relative overflow-hidden bg-[#ceccff] p-8">
+            <article
+              class="group relative overflow-hidden bg-theme-primary-soft p-8"
+            >
               <p
                 class="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-700"
               >
@@ -428,7 +424,7 @@
                 brand.
               </p>
               <span
-                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-[#a8a6df]"
+                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/45"
                 >03</span
               >
             </article>
@@ -440,16 +436,18 @@
               >
                 04
               </p>
-              <h3 class="text-2xl font-semibold text-[#111827]">Branding</h3>
+              <h3 class="text-2xl font-semibold text-theme-text">Branding</h3>
               <p class="mt-4 text-base leading-7 text-slate-700">
                 Positioning, identity, and messaging built for long-term growth.
               </p>
               <span
-                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-[#e2e2ea]"
+                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/20"
                 >04</span
               >
             </article>
-            <article class="group relative overflow-hidden bg-[#ceccff] p-8">
+            <article
+              class="group relative overflow-hidden bg-theme-primary-soft p-8"
+            >
               <p
                 class="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-700"
               >
@@ -462,7 +460,7 @@
                 Dynamic content designed to strengthen attention and emotion.
               </p>
               <span
-                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-[#a8a6df]"
+                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/45"
                 >05</span
               >
             </article>
@@ -474,13 +472,13 @@
               >
                 06
               </p>
-              <h3 class="text-2xl font-semibold text-[#111827]">Web Design</h3>
+              <h3 class="text-2xl font-semibold text-theme-text">Web Design</h3>
               <p class="mt-4 text-base leading-7 text-slate-700">
                 Fast, modern experiences built to perform beautifully on every
                 screen.
               </p>
               <span
-                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-[#e2e2ea]"
+                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/20"
                 >06</span
               >
             </article>
@@ -503,77 +501,113 @@
           </h2>
         </div>
 
-        <div class="gallery-grid">
-          <div class="gallery-item">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+          >
             <a
               href="/src/assets/images/portfolio6.jpg"
-              class="glightbox"
+              class="glightbox block h-full"
               data-gallery="portfolio"
               data-title="Product Photography"
               ><img
                 src="/src/assets/images/portfolio6.jpg"
                 alt="Product Photography"
-              /><span class="gallery-caption">Product Photography</span></a
+                class="h-full min-h-[320px] w-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+              /><span
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 font-bold tracking-[0.04em] text-white"
+                >Product Photography</span
+              ></a
             >
           </div>
-          <div class="gallery-item">
+          <div
+            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+          >
             <a
               href="/src/assets/images/portfolio5.jpg"
-              class="glightbox"
+              class="glightbox block h-full"
               data-gallery="portfolio"
               data-title="Lists & Notes"
               ><img
                 src="/src/assets/images/portfolio5.jpg"
                 alt="Lists & Notes"
-              /><span class="gallery-caption">Lists & Notes</span></a
+                class="h-full min-h-[320px] w-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+              /><span
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 font-bold tracking-[0.04em] text-white"
+                >Lists & Notes</span
+              ></a
             >
           </div>
-          <div class="gallery-item">
+          <div
+            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+          >
             <a
               href="/src/assets/images/portfolio4.jpg"
-              class="glightbox"
+              class="glightbox block h-full"
               data-gallery="portfolio"
               data-title="Designing"
               ><img
                 src="/src/assets/images/portfolio4.jpg"
                 alt="Designing"
-              /><span class="gallery-caption">Designing</span></a
+                class="h-full min-h-[320px] w-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+              /><span
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 font-bold tracking-[0.04em] text-white"
+                >Designing</span
+              ></a
             >
           </div>
-          <div class="gallery-item">
+          <div
+            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+          >
             <a
               href="/src/assets/images/portfolio3.jpg"
-              class="glightbox"
+              class="glightbox block h-full"
               data-gallery="portfolio"
               data-title="Branding"
               ><img
                 src="/src/assets/images/portfolio3.jpg"
                 alt="Branding"
-              /><span class="gallery-caption">Branding</span></a
+                class="h-full min-h-[320px] w-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+              /><span
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 font-bold tracking-[0.04em] text-white"
+                >Branding</span
+              ></a
             >
           </div>
-          <div class="gallery-item">
+          <div
+            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+          >
             <a
               href="/src/assets/images/portfolio1.jpg"
-              class="glightbox"
+              class="glightbox block h-full"
               data-gallery="portfolio"
               data-title="Illustration"
               ><img
                 src="/src/assets/images/portfolio1.jpg"
                 alt="Illustration"
-              /><span class="gallery-caption">Illustration</span></a
+                class="h-full min-h-[320px] w-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+              /><span
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 font-bold tracking-[0.04em] text-white"
+                >Illustration</span
+              ></a
             >
           </div>
-          <div class="gallery-item">
+          <div
+            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+          >
             <a
               href="/src/assets/images/portfolio2.jpg"
-              class="glightbox"
+              class="glightbox block h-full"
               data-gallery="portfolio"
               data-title="Web Design"
               ><img
                 src="/src/assets/images/portfolio2.jpg"
                 alt="Web Design"
-              /><span class="gallery-caption">Web Design</span></a
+                class="h-full min-h-[320px] w-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+              /><span
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 font-bold tracking-[0.04em] text-white"
+                >Web Design</span
+              ></a
             >
           </div>
         </div>
@@ -581,7 +615,7 @@
         <div class="mt-10 text-center">
           <a
             href="#"
-            class="inline-flex items-center justify-center rounded-full bg-[#ceccff] px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#111827] transition hover:bg-[#bebcfa]"
+            class="inline-flex items-center justify-center rounded-full bg-theme-primary-soft px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#111827] transition hover:bg-theme-primary-soft-strong"
             >View Gallery</a
           >
         </div>
@@ -602,12 +636,12 @@
 
           <div class="relative hidden xl:block">
             <div
-              class="absolute left-1/2 top-1/2 h-0.5 w-[70%] -translate-x-1/2 -translate-y-1/2 bg-[#d9d8f8]"
+              class="absolute left-1/2 top-1/2 h-0.5 w-[70%] -translate-x-1/2 -translate-y-1/2 bg-theme-primary/20"
             ></div>
             <div class="grid grid-cols-5 gap-6">
               <div class="text-center">
                 <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-[#ceccff] text-2xl font-black text-[#111827]"
+                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
                 >
                   01
                 </div>
@@ -619,7 +653,7 @@
               </div>
               <div class="pt-14 text-center">
                 <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-[#ceccff] text-2xl font-black text-[#111827]"
+                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
                 >
                   02
                 </div>
@@ -631,7 +665,7 @@
               </div>
               <div class="text-center">
                 <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-[#ceccff] text-2xl font-black text-[#111827]"
+                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
                 >
                   03
                 </div>
@@ -643,7 +677,7 @@
               </div>
               <div class="pt-14 text-center">
                 <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-[#ceccff] text-2xl font-black text-[#111827]"
+                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
                 >
                   04
                 </div>
@@ -655,7 +689,7 @@
               </div>
               <div class="text-center">
                 <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-[#ceccff] text-2xl font-black text-[#111827]"
+                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
                 >
                   05
                 </div>
@@ -669,7 +703,7 @@
           </div>
 
           <div class="grid gap-4 xl:hidden">
-            <div class="bg-[#ceccff] p-5">
+            <div class="bg-theme-primary-soft p-5">
               <p
                 class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
               >
@@ -681,7 +715,7 @@
                 Requirement analysis
               </p>
             </div>
-            <div class="bg-[#f4f4f6] p-5">
+            <div class="bg-theme-primary-faint p-5">
               <p
                 class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
               >
@@ -693,7 +727,7 @@
                 Market research
               </p>
             </div>
-            <div class="bg-[#ceccff] p-5">
+            <div class="bg-theme-primary-soft p-5">
               <p
                 class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
               >
@@ -705,7 +739,7 @@
                 Design concepts
               </p>
             </div>
-            <div class="bg-[#f4f4f6] p-5">
+            <div class="bg-theme-primary-faint p-5">
               <p
                 class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
               >
@@ -717,7 +751,7 @@
                 Build prototype
               </p>
             </div>
-            <div class="bg-[#ceccff] p-5">
+            <div class="bg-theme-primary-soft p-5">
               <p
                 class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
               >
@@ -735,7 +769,7 @@
 
       <section
         id="testimonial"
-        class="relative overflow-hidden bg-[#f8f8fb] py-20"
+        class="relative overflow-hidden bg-theme-primary-faint py-20"
       >
         <div class="absolute left-0 top-0 hidden h-full lg:block">
           <img
@@ -751,18 +785,18 @@
             <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
               <iconify-icon
                 icon="gg:quote"
-                class="text-6xl text-[#ceccff]"
+                class="text-6xl text-theme-primary"
               ></iconify-icon>
               <div>
                 <p
-                  class="text-2xl font-bold leading-relaxed text-[#111827] sm:text-3xl"
+                  class="text-2xl font-bold leading-relaxed text-theme-text sm:text-3xl"
                 >
                   Pretium turpis faucibus adipiscing duis. Id quis tristique mi
                   vitae nec. In et in praesent pellentesque. Porta sit porta
                   ridiculus faucibus.
                 </p>
                 <p
-                  class="mt-6 text-base font-bold uppercase tracking-[0.14em] text-[#111827]"
+                  class="mt-6 text-base font-bold uppercase tracking-[0.14em] text-theme-text"
                 >
                   John Geoffrey
                   <span
@@ -794,11 +828,11 @@
         <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
           <div class="text-center">
             <div
-              class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-[#f4f4f6] text-4xl text-[#ceccff]"
+              class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-theme-primary-faint text-4xl text-theme-primary-soft-strong"
             >
               <iconify-icon icon="basil:diamond-outline"></iconify-icon>
             </div>
-            <h3 class="mt-6 text-4xl font-semibold text-[#111827]">1200+</h3>
+            <h3 class="mt-6 text-4xl font-semibold text-theme-text">1200+</h3>
             <p
               class="mt-2 text-sm font-black uppercase tracking-[0.18em] text-slate-600"
             >
@@ -807,11 +841,11 @@
           </div>
           <div class="text-center">
             <div
-              class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-[#f4f4f6] text-4xl text-[#ceccff]"
+              class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-theme-primary-faint text-4xl text-theme-primary-soft-strong"
             >
               <iconify-icon icon="ion:people-outline"></iconify-icon>
             </div>
-            <h3 class="mt-6 text-4xl font-semibold text-[#111827]">1250+</h3>
+            <h3 class="mt-6 text-4xl font-semibold text-theme-text">1250+</h3>
             <p
               class="mt-2 text-sm font-black uppercase tracking-[0.18em] text-slate-600"
             >
@@ -820,11 +854,11 @@
           </div>
           <div class="text-center">
             <div
-              class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-[#f4f4f6] text-4xl text-[#ceccff]"
+              class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-theme-primary-faint text-4xl text-theme-primary-soft-strong"
             >
               <iconify-icon icon="streamline:graph-bar-increase"></iconify-icon>
             </div>
-            <h3 class="mt-6 text-4xl font-semibold text-[#111827]">1300+</h3>
+            <h3 class="mt-6 text-4xl font-semibold text-theme-text">1300+</h3>
             <p
               class="mt-2 text-sm font-black uppercase tracking-[0.18em] text-slate-600"
             >
@@ -833,11 +867,11 @@
           </div>
           <div class="text-center">
             <div
-              class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-[#f4f4f6] text-4xl text-[#ceccff]"
+              class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-theme-primary-faint text-4xl text-theme-primary-soft-strong"
             >
               <iconify-icon icon="tabler:award"></iconify-icon>
             </div>
-            <h3 class="mt-6 text-4xl font-semibold text-[#111827]">99+</h3>
+            <h3 class="mt-6 text-4xl font-semibold text-theme-text">99+</h3>
             <p
               class="mt-2 text-sm font-black uppercase tracking-[0.18em] text-slate-600"
             >
@@ -847,7 +881,7 @@
         </div>
       </section>
 
-      <section id="video" class="bg-[#f2f1ff] py-20">
+      <section id="video" class="bg-theme-primary-faint py-20">
         <div class="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div class="absolute left-0 top-0 hidden lg:block">
             <img
@@ -878,7 +912,7 @@
             <div class="absolute inset-0 flex items-center justify-center">
               <a
                 href="https://www.youtube.com/watch?v=_N-AaFDRZEk"
-                class="glightbox video-button"
+                class="glightbox inline-flex h-24 w-24 items-center justify-center rounded-full bg-black/30 backdrop-blur-sm transition duration-250 hover:scale-105 hover:bg-black/40"
                 data-type="video"
                 data-gallery="video"
                 aria-label="Play company video"
@@ -908,85 +942,41 @@
         <div class="grid gap-8 md:grid-cols-2">
           <article class="group">
             <div class="overflow-hidden rounded-[1.75rem]">
-              <a href="#" class="zoom-effect block"
+              <a href="#" class="group block overflow-hidden rounded-[1.75rem]"
                 ><img
                   src="/src/assets/images/blog1.jpg"
                   alt="Blog article"
-                  class="h-[420px] w-full object-cover"
+                  class="h-[420px] w-full object-cover transition-transform duration-600 group-hover:scale-110"
               /></a>
             </div>
             <a
               href="#"
-              class="mt-5 block text-2xl font-semibold leading-tight text-[#111827] transition group-hover:text-[#5550b7]"
+              class="mt-5 block text-2xl font-semibold leading-tight text-[#111827] transition group-hover:text-theme-primary-strong"
               >A delightful lemon grape flavor that paired well with my go-to
               berry blend.</a
             >
           </article>
           <article class="group">
             <div class="overflow-hidden rounded-[1.75rem]">
-              <a href="#" class="zoom-effect block"
+              <a href="#" class="group block overflow-hidden rounded-[1.75rem]"
                 ><img
                   src="/src/assets/images/blog2.jpg"
                   alt="Blog article"
-                  class="h-[420px] w-full object-cover"
+                  class="h-[420px] w-full object-cover transition-transform duration-600 group-hover:scale-110"
               /></a>
             </div>
             <a
               href="#"
-              class="mt-5 block text-2xl font-semibold leading-tight text-[#111827] transition group-hover:text-[#5550b7]"
+              class="mt-5 block text-2xl font-semibold leading-tight text-[#111827] transition group-hover:text-theme-primary-strong"
               >A delightful lemon grape flavor that paired well with my go-to
               berry blend.</a
             >
           </article>
         </div>
       </section>
-
-      <section id="partners" class="relative overflow-hidden bg-white py-20">
-        <div class="absolute right-0 top-0 hidden lg:block">
-          <img
-            src="/src/assets/images/pattern-4.png"
-            alt="Decorative pattern"
-            class="opacity-60"
-          />
-        </div>
-        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="grid items-center gap-8 sm:grid-cols-2 lg:grid-cols-6">
-            <img
-              src="/src/assets/images/brand1.png"
-              alt="Brand 1"
-              class="brand mx-auto h-14 w-auto object-contain"
-            />
-            <img
-              src="/src/assets/images/brand2.png"
-              alt="Brand 2"
-              class="brand mx-auto h-14 w-auto object-contain"
-            />
-            <img
-              src="/src/assets/images/brand3.png"
-              alt="Brand 3"
-              class="brand mx-auto h-14 w-auto object-contain"
-            />
-            <img
-              src="/src/assets/images/brand4.png"
-              alt="Brand 4"
-              class="brand mx-auto h-14 w-auto object-contain"
-            />
-            <img
-              src="/src/assets/images/brand5.png"
-              alt="Brand 5"
-              class="brand mx-auto h-14 w-auto object-contain"
-            />
-            <img
-              src="/src/assets/images/brand6.png"
-              alt="Brand 6"
-              class="brand mx-auto h-14 w-auto object-contain"
-            />
-          </div>
-        </div>
-      </section>
     </main>
 
-    <footer id="contact" class="bg-[#332e54] text-slate-200">
+    <footer id="contact" class="bg-theme-footer text-slate-200">
       <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div class="grid gap-10 lg:grid-cols-[1.2fr_0.6fr_0.6fr_1fr]">
           <div>
@@ -1004,11 +994,11 @@
                 type="email"
                 name="email"
                 placeholder="Enter Email Address"
-                class="w-full rounded-xl border border-white/20 bg-white px-4 py-3.5 text-base text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-[#ceccff]"
+                class="w-full rounded-xl border border-white/20 bg-white px-4 py-3.5 text-base text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-theme-primary"
               />
               <button
                 type="submit"
-                class="inline-flex w-full items-center justify-center rounded-xl bg-[#111827] px-5 py-3.5 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-black"
+                class="inline-flex w-full items-center justify-center rounded-xl bg-theme-text px-5 py-3.5 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-black"
               >
                 Register now
               </button>
@@ -1017,20 +1007,74 @@
 
           <div>
             <ul class="space-y-3">
-              <li><a href="#" class="footer-link">Home</a></li>
-              <li><a href="#about" class="footer-link">About us</a></li>
-              <li><a href="#service" class="footer-link">Offer</a></li>
-              <li><a href="#service" class="footer-link">Services</a></li>
-              <li><a href="#contact" class="footer-link">Contact us</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#service"
+                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  >Offer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#service"
+                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  >Contact us</a
+                >
+              </li>
             </ul>
           </div>
 
           <div>
             <ul class="space-y-3">
-              <li><a href="#" class="footer-link">Payments</a></li>
-              <li><a href="#" class="footer-link">Packages</a></li>
-              <li><a href="#" class="footer-link">Promotions</a></li>
-              <li><a href="#" class="footer-link">FAQs</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  >Payments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  >Packages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  >Promotions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  >FAQs</a
+                >
+              </li>
             </ul>
           </div>
 
@@ -1052,19 +1096,34 @@
             class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between"
           >
             <div class="flex items-center gap-4 text-2xl text-slate-300">
-              <a href="#" class="social-link" aria-label="Facebook"
+              <a
+                href="#"
+                class="text-2xl text-slate-300 transition-colors hover:text-white"
+                aria-label="Facebook"
                 ><iconify-icon icon="ri:facebook-fill"></iconify-icon
               ></a>
-              <a href="#" class="social-link" aria-label="Twitter"
+              <a
+                href="#"
+                class="text-2xl text-slate-300 transition-colors hover:text-white"
+                aria-label="Twitter"
                 ><iconify-icon icon="ri:twitter-fill"></iconify-icon
               ></a>
-              <a href="#" class="social-link" aria-label="Pinterest"
+              <a
+                href="#"
+                class="text-2xl text-slate-300 transition-colors hover:text-white"
+                aria-label="Pinterest"
                 ><iconify-icon icon="ri:pinterest-fill"></iconify-icon
               ></a>
-              <a href="#" class="social-link" aria-label="Instagram"
+              <a
+                href="#"
+                class="text-2xl text-slate-300 transition-colors hover:text-white"
+                aria-label="Instagram"
                 ><iconify-icon icon="ri:instagram-fill"></iconify-icon
               ></a>
-              <a href="#" class="social-link" aria-label="YouTube"
+              <a
+                href="#"
+                class="text-2xl text-slate-300 transition-colors hover:text-white"
+                aria-label="YouTube"
                 ><iconify-icon icon="ri:youtube-fill"></iconify-icon
               ></a>
             </div>
@@ -1074,7 +1133,7 @@
                 href="https://templatesjungle.com/"
                 target="_blank"
                 rel="noreferrer"
-                class="footer-link underline"
+                class="text-base uppercase tracking-[0.04em] text-slate-300 underline transition-colors hover:text-white"
                 >TemplatesJungle</a
               >
             </p>
