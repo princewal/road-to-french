@@ -179,7 +179,7 @@
                 class="absolute -left-10 top-6 h-28 w-28 rounded-full bg-theme-primary/75 blur-3xl"
               ></div>
               <div
-                class="absolute -right-6 bottom-0 h-28 w-28 rounded-full bg-[#dbeafe]/80 blur-3xl"
+                class="absolute -right-6 bottom-0 h-28 w-28 rounded-full bg-theme-primary/20 blur-3xl"
               ></div>
               <img
                 src="/src/assets/images/banner-img.png"
@@ -340,13 +340,6 @@
         id="service"
         class="relative overflow-hidden bg-theme-primary-faint py-20"
       >
-        <div class="absolute right-0 top-0 hidden h-full w-40 lg:block">
-          <img
-            src="/src/assets/images/pattern-1.png"
-            alt="Decorative pattern"
-            class="h-full w-full object-cover opacity-60"
-          />
-        </div>
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div
             class="mb-12 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between"
@@ -503,7 +496,7 @@
 
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div
-            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+            class="group relative overflow-hidden rounded-[1.25rem] bg-theme-primary-faint shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
           >
             <a
               href="/src/assets/images/portfolio6.jpg"
@@ -521,7 +514,7 @@
             >
           </div>
           <div
-            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+            class="group relative overflow-hidden rounded-[1.25rem] bg-theme-primary-faint shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
           >
             <a
               href="/src/assets/images/portfolio5.jpg"
@@ -539,7 +532,7 @@
             >
           </div>
           <div
-            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+            class="group relative overflow-hidden rounded-[1.25rem] bg-theme-primary-faint shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
           >
             <a
               href="/src/assets/images/portfolio4.jpg"
@@ -557,7 +550,7 @@
             >
           </div>
           <div
-            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+            class="group relative overflow-hidden rounded-[1.25rem] bg-theme-primary-faint shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
           >
             <a
               href="/src/assets/images/portfolio3.jpg"
@@ -575,7 +568,7 @@
             >
           </div>
           <div
-            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+            class="group relative overflow-hidden rounded-[1.25rem] bg-theme-primary-faint shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
           >
             <a
               href="/src/assets/images/portfolio1.jpg"
@@ -593,7 +586,7 @@
             >
           </div>
           <div
-            class="group relative overflow-hidden rounded-[1.25rem] bg-[#f1f1f1] shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
+            class="group relative overflow-hidden rounded-[1.25rem] bg-theme-primary-faint shadow-[0_20px_45px_rgba(17,19,23,0.06)]"
           >
             <a
               href="/src/assets/images/portfolio2.jpg"
@@ -771,13 +764,6 @@
         id="testimonial"
         class="relative overflow-hidden bg-theme-primary-faint py-20"
       >
-        <div class="absolute left-0 top-0 hidden h-full lg:block">
-          <img
-            src="/src/assets/images/pattern-2.png"
-            alt="Decorative pattern"
-            class="h-full w-full object-cover opacity-60"
-          />
-        </div>
         <div class="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div
             class="rounded-[2rem] bg-white p-8 shadow-[0_30px_80px_rgba(17,19,23,0.06)] sm:p-12"
@@ -883,13 +869,6 @@
 
       <section id="video" class="bg-theme-primary-faint py-20">
         <div class="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="absolute left-0 top-0 hidden lg:block">
-            <img
-              src="/src/assets/images/pattern-3.png"
-              alt="Decorative pattern"
-              class="opacity-60"
-            />
-          </div>
           <div class="relative text-center">
             <p
               class="text-sm font-bold uppercase tracking-[0.24em] text-slate-600"
@@ -976,166 +955,177 @@
       </section>
     </main>
 
-    <footer id="contact" class="bg-theme-footer text-slate-200">
-      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-[1.2fr_0.6fr_0.6fr_1fr]">
+    <footer id="contact" class="bg-theme-primary text-white">
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-wrap items-center justify-center gap-4 border-b border-white/20 pb-6 text-sm font-bold uppercase tracking-[0.18em] sm:gap-8"
+        >
+          <a href="#" class="transition hover:text-theme-primary-soft">Home</a>
+          <a href="#about" class="transition hover:text-theme-primary-soft"
+            >About</a
+          >
+          <a href="#service" class="transition hover:text-theme-primary-soft"
+            >Services</a
+          >
+          <a href="#portfolio" class="transition hover:text-theme-primary-soft"
+            >Portfolio</a
+          >
+          <a href="#blog" class="transition hover:text-theme-primary-soft"
+            >Blog</a
+          >
+          <a href="#contact" class="transition hover:text-theme-primary-soft"
+            >Contact</a
+          >
+        </div>
+
+        <div class="grid gap-10 py-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
           <div>
             <img
-              src="/src/assets/images/logo-dark.png"
-              alt="Codeo logo"
+              src="/src/assets/images/logo.png"
+              alt="Road to French logo"
               class="h-12 w-auto"
             />
-            <p class="mt-5 max-w-md text-base leading-7 text-slate-300">
-              We design clear, confident digital experiences that help brands
-              grow with intention.
+            <p class="mt-5 max-w-md text-base leading-7 text-white/80">
+              We help learners build confidence, fluency, and real-world French
+              communication with structured coaching and clear guidance.
             </p>
-            <form class="mt-8 space-y-3">
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Email Address"
-                class="w-full rounded-xl border border-white/20 bg-white px-4 py-3.5 text-base text-slate-700 outline-none transition placeholder:text-slate-400 focus:border-theme-primary"
-              />
-              <button
-                type="submit"
-                class="inline-flex w-full items-center justify-center rounded-xl bg-theme-text px-5 py-3.5 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-black"
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href="mailto:hello@roadtofrench.com"
+                class="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-theme-primary transition hover:bg-theme-primary-soft"
               >
-                Register now
-              </button>
-            </form>
+                Book a Call
+              </a>
+            </div>
           </div>
 
           <div>
-            <ul class="space-y-3">
-              <li>
-                <a
-                  href="#"
-                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
-                  >Home</a
-                >
-              </li>
+            <h3
+              class="text-sm font-black uppercase tracking-[0.18em] text-white/80"
+            >
+              Explore
+            </h3>
+            <ul class="mt-5 space-y-3">
               <li>
                 <a
                   href="#about"
-                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
+                  class="text-base text-white/80 transition hover:text-white"
                   >About us</a
                 >
               </li>
               <li>
                 <a
                   href="#service"
-                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
-                  >Offer</a
+                  class="text-base text-white/80 transition hover:text-white"
+                  >Programs</a
                 >
               </li>
               <li>
                 <a
-                  href="#service"
-                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
-                  >Services</a
+                  href="#portfolio"
+                  class="text-base text-white/80 transition hover:text-white"
+                  >Success stories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="text-base text-white/80 transition hover:text-white"
+                  >Resources</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3
+              class="text-sm font-black uppercase tracking-[0.18em] text-white/80"
+            >
+              Support
+            </h3>
+            <ul class="mt-5 space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-base text-white/80 transition hover:text-white"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base text-white/80 transition hover:text-white"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base text-white/80 transition hover:text-white"
+                  >Certificates</a
                 >
               </li>
               <li>
                 <a
                   href="#contact"
-                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
-                  >Contact us</a
+                  class="text-base text-white/80 transition hover:text-white"
+                  >Contact</a
                 >
               </li>
             </ul>
           </div>
 
           <div>
-            <ul class="space-y-3">
-              <li>
-                <a
-                  href="#"
-                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
-                  >Payments</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
-                  >Packages</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
-                  >Promotions</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-base uppercase tracking-[0.04em] text-slate-300 transition-colors hover:text-white"
-                  >FAQs</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <p class="text-base leading-7 text-slate-300">
-              Harum officiis beatae quisquam ratione nostrum ipsum, delectus
-              minima aliquam ut quaerat?
+            <h3
+              class="text-sm font-black uppercase tracking-[0.18em] text-white/80"
+            >
+              Contact
+            </h3>
+            <p class="mt-5 text-base leading-7 text-white/80">
+              Speak with our team about your goals, timeline, and the best
+              learning path for you.
             </p>
             <a
-              href="mailto:yourcontact@gmail.com"
-              class="mt-4 inline-block text-2xl font-medium text-white underline decoration-white/70 underline-offset-4"
-              >yourcontact@gmail.com</a
+              href="mailto:hello@roadtofrench.com"
+              class="mt-4 inline-block text-xl font-medium text-white underline decoration-white/70 underline-offset-4"
             >
+              hello@roadtofrench.com
+            </a>
           </div>
         </div>
 
-        <div class="mt-10 border-t border-white/10 pt-8">
+        <div class="border-t border-white/20 pt-8">
           <div
             class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between"
           >
-            <div class="flex items-center gap-4 text-2xl text-slate-300">
+            <div class="flex items-center gap-4 text-2xl text-white/80">
               <a
                 href="#"
-                class="text-2xl text-slate-300 transition-colors hover:text-white"
+                class="transition hover:text-white"
                 aria-label="Facebook"
                 ><iconify-icon icon="ri:facebook-fill"></iconify-icon
               ></a>
               <a
                 href="#"
-                class="text-2xl text-slate-300 transition-colors hover:text-white"
-                aria-label="Twitter"
-                ><iconify-icon icon="ri:twitter-fill"></iconify-icon
-              ></a>
-              <a
-                href="#"
-                class="text-2xl text-slate-300 transition-colors hover:text-white"
-                aria-label="Pinterest"
-                ><iconify-icon icon="ri:pinterest-fill"></iconify-icon
-              ></a>
-              <a
-                href="#"
-                class="text-2xl text-slate-300 transition-colors hover:text-white"
+                class="transition hover:text-white"
                 aria-label="Instagram"
                 ><iconify-icon icon="ri:instagram-fill"></iconify-icon
               ></a>
               <a
                 href="#"
-                class="text-2xl text-slate-300 transition-colors hover:text-white"
+                class="transition hover:text-white"
+                aria-label="LinkedIn"
+                ><iconify-icon icon="ri:linkedin-fill"></iconify-icon
+              ></a>
+              <a
+                href="#"
+                class="transition hover:text-white"
                 aria-label="YouTube"
                 ><iconify-icon icon="ri:youtube-fill"></iconify-icon
               ></a>
             </div>
-            <p class="text-sm text-slate-300">
-              Free HTML Template By:
-              <a
-                href="https://templatesjungle.com/"
-                target="_blank"
-                rel="noreferrer"
-                class="text-base uppercase tracking-[0.04em] text-slate-300 underline transition-colors hover:text-white"
-                >TemplatesJungle</a
-              >
+            <p class="text-sm text-white/80">
+              © 2026 Road to French. All rights reserved.
             </p>
           </div>
         </div>
