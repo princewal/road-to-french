@@ -31,40 +31,44 @@
         <div
           class="flex items-center justify-between rounded-b-[1.5rem] border border-white/30 bg-white/80 px-4 py-4 shadow-[0_12px_40px_rgba(17,19,23,0.05)] backdrop-blur-sm transition-all duration-300 lg:px-6"
         >
-          <a href="#" class="flex items-center" aria-label="Codeo home">
+          <a
+            href="#"
+            class="flex items-center"
+            aria-label="Road to French home"
+          >
             <img
               src="/src/assets/images/logo.png"
-              alt="Codeo logo"
+              alt="Road to French logo"
               class="h-10 w-auto object-contain"
             />
-            <span class="text-sm font-bold whitespace-nowrap"
+            <span class="ml-2 text-sm font-bold whitespace-nowrap"
               >Road to French</span
             >
           </a>
 
-          <div class="hidden items-center gap-8 lg:flex">
+          <div class="hidden items-center gap-7 lg:flex">
             <a
               href="#"
               class="nav-link active text-sm font-black uppercase tracking-[0.18em] text-theme-text"
               >Home</a
             >
             <a
-              href="#about"
+              href="#programs"
               class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
               >TCF/TEF · PR</a
             >
             <a
-              href="#portfolio"
+              href="#programs"
               class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
               >Federal SLE</a
             >
             <a
-              href="#"
+              href="#programs"
               class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
               >Private Coaching</a
             >
             <a
-              href="#contact"
+              href="#faq"
               class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
               >FAQ</a
             >
@@ -73,26 +77,40 @@
               class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
               >Contact</a
             >
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-full bg-theme-primary px-4 py-2.5 text-[11px] font-black uppercase tracking-[0.18em] text-theme-text transition hover:bg-theme-primary-hover"
+            >
+              Book a Call
+            </a>
           </div>
 
-          <button
-            type="button"
-            data-menu-toggle
-            class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 lg:hidden"
-            aria-label="Open menu"
-            aria-expanded="false"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              class="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
+          <div class="flex items-center gap-3 lg:hidden">
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-full bg-theme-primary px-3 py-2 text-[10px] font-black uppercase tracking-[0.16em] text-theme-text transition hover:bg-theme-primary-hover"
             >
-              <path d="M4 7h16M4 12h16M4 17h16"></path>
-            </svg>
-          </button>
+              Book
+            </a>
+            <button
+              type="button"
+              data-menu-toggle
+              class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800"
+              aria-label="Open menu"
+              aria-expanded="false"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                class="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              >
+                <path d="M4 7h16M4 12h16M4 17h16"></path>
+              </svg>
+            </button>
+          </div>
         </div>
 
         <div
@@ -106,19 +124,24 @@
               >Home</a
             >
             <a
-              href="#about"
+              href="#programs"
               class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-              >About</a
+              >TCF/TEF · PR</a
             >
             <a
-              href="#portfolio"
+              href="#programs"
               class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-              >Works</a
+              >Federal SLE</a
             >
             <a
-              href="#blog"
+              href="#programs"
               class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-              >Blog</a
+              >Private Coaching</a
+            >
+            <a
+              href="#faq"
+              class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
+              >FAQ</a
             >
             <a
               href="#contact"
@@ -210,129 +233,90 @@
         </div>
       </section>
 
-      <section id="about" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div class="grid items-center gap-12 lg:grid-cols-2">
-          <div class="relative">
-            <div
-              class="absolute -left-8 top-10 h-24 w-24 rounded-full bg-theme-primary/60 blur-3xl"
-            ></div>
-            <img
-              src="/src/assets/images/about.png"
-              alt="About our company"
-              class="relative z-10 w-full rounded-[2rem] shadow-[0_30px_80px_rgba(17,19,23,0.08)]"
-            />
-          </div>
+      <section
+        id="programs"
+        class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8"
+      >
+        <div class="mb-10 text-center">
+          <p
+            class="text-sm font-bold uppercase tracking-[0.24em] text-slate-600"
+          >
+            Programs
+          </p>
+          <h2 class="mt-3 text-3xl font-semibold text-[#111827] sm:text-5xl">
+            Choose your path to French
+          </h2>
+        </div>
 
-          <div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article
+            class="program-card group relative overflow-hidden rounded-[2rem] border border-theme-primary/10 bg-theme-primary-soft p-8 shadow-[0_18px_40px_rgba(17,19,23,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_48px_rgba(17,19,23,0.12)] sm:p-10"
+          >
             <div
-              class="mb-8 flex flex-wrap gap-6 border-b border-slate-200 pb-4"
+              class="mb-5 inline-flex rounded-full bg-white/70 px-3 py-1 text-xs font-black uppercase tracking-[0.22em] text-theme-primary"
             >
-              <button
-                type="button"
-                class="tab-button active text-sm font-black uppercase tracking-[0.2em] text-theme-text"
-                data-tab="about"
+              TCF/TEF · PR
+            </div>
+            <h3 class="text-3xl font-semibold text-[#111827]">
+              French language certification
+            </h3>
+            <p class="mt-4 max-w-lg text-base leading-7 text-slate-700">
+              Build the confidence and accuracy you need to succeed in official
+              language tests, immigration pathways, and professional
+              communication.
+            </p>
+            <ul
+              class="mt-6 space-y-3 text-sm font-medium uppercase tracking-[0.08em] text-slate-700"
+            >
+              <li>• Structured exam prep</li>
+              <li>• Speaking and writing drills</li>
+              <li>• Strategy for higher scores</li>
+            </ul>
+            <div class="mt-8 flex items-center justify-between">
+              <span
+                class="text-sm font-black uppercase tracking-[0.18em] text-theme-primary"
+                >Learn more</span
               >
-                About us
-              </button>
-              <button
-                type="button"
-                class="tab-button text-sm font-black uppercase tracking-[0.2em] text-slate-500"
-                data-tab="history"
+              <span
+                class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-xl text-theme-primary"
+                >→</span
               >
-                History
-              </button>
-              <button
-                type="button"
-                class="tab-button text-sm font-black uppercase tracking-[0.2em] text-slate-500"
-                data-tab="mission"
+            </div>
+          </article>
+
+          <article
+            class="program-card group relative overflow-hidden rounded-[2rem] border border-theme-primary/10 bg-white p-8 shadow-[0_18px_40px_rgba(17,19,23,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_48px_rgba(17,19,23,0.12)] sm:p-10"
+          >
+            <div
+              class="mb-5 inline-flex rounded-full bg-theme-primary-soft px-3 py-1 text-xs font-black uppercase tracking-[0.22em] text-theme-primary"
+            >
+              Federal SLE
+            </div>
+            <h3 class="text-3xl font-semibold text-[#111827]">
+              Immigration & language support
+            </h3>
+            <p class="mt-4 max-w-lg text-base leading-7 text-slate-700">
+              Prepare for the language requirements that matter most with
+              practical coaching, confident speaking, and a clear study plan.
+            </p>
+            <ul
+              class="mt-6 space-y-3 text-sm font-medium uppercase tracking-[0.08em] text-slate-700"
+            >
+              <li>• Federal requirements guidance</li>
+              <li>• Practical speaking confidence</li>
+              <li>• Real-world French fluency</li>
+            </ul>
+            <div class="mt-8 flex items-center justify-between">
+              <span
+                class="text-sm font-black uppercase tracking-[0.18em] text-theme-primary"
+                >Learn more</span
               >
-                Mission
-              </button>
+              <span
+                class="flex h-11 w-11 items-center justify-center rounded-full bg-theme-primary-soft text-xl text-theme-primary"
+                >→</span
+              >
             </div>
-
-            <div class="tab-panel active" data-panel="about">
-              <h3 class="text-3xl font-semibold text-[#111827] sm:text-4xl">
-                About our company
-              </h3>
-              <p class="mt-5 text-lg leading-8 text-slate-600">
-                We help brands define their voice, sharpen their digital
-                experience, and move with clarity in competitive markets.
-              </p>
-
-              <div class="mt-8 space-y-6">
-                <div>
-                  <div class="mb-2 flex items-center justify-between">
-                    <h4
-                      class="text-base font-semibold uppercase tracking-[0.14em] text-[#111827]"
-                    >
-                      Hotel & tourism
-                    </h4>
-                    <span class="text-sm font-medium text-slate-500">25%</span>
-                  </div>
-                  <div class="h-2.5 overflow-hidden rounded-full bg-slate-200">
-                    <div
-                      class="h-full w-[25%] rounded-full bg-theme-primary-soft"
-                    ></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="mb-2 flex items-center justify-between">
-                    <h4
-                      class="text-base font-semibold uppercase tracking-[0.14em] text-[#111827]"
-                    >
-                      E-commerce
-                    </h4>
-                    <span class="text-sm font-medium text-slate-500">25%</span>
-                  </div>
-                  <div class="h-2.5 overflow-hidden rounded-full bg-slate-200">
-                    <div
-                      class="h-full w-[25%] rounded-full bg-theme-primary-soft"
-                    ></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="mb-2 flex items-center justify-between">
-                    <h4
-                      class="text-base font-semibold uppercase tracking-[0.14em] text-[#111827]"
-                    >
-                      Non Profit
-                    </h4>
-                    <span class="text-sm font-medium text-slate-500">25%</span>
-                  </div>
-                  <div class="h-2.5 overflow-hidden rounded-full bg-slate-200">
-                    <div
-                      class="h-full w-[25%] rounded-full bg-theme-primary-soft"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab-panel hidden" data-panel="history">
-              <h3 class="text-3xl font-semibold text-[#111827] sm:text-4xl">
-                Our history
-              </h3>
-              <p class="mt-5 text-lg leading-8 text-slate-600">
-                Our studio has evolved from a boutique design practice into a
-                multidisciplinary team focused on delivering clear, premium
-                experiences.
-              </p>
-              <p class="mt-5 text-lg leading-8 text-slate-600">
-                We pair strategic thinking with craft, helping businesses turn
-                ambition into elegant digital systems that last.
-              </p>
-            </div>
-
-            <div class="tab-panel hidden" data-panel="mission">
-              <h3 class="text-3xl font-semibold text-[#111827] sm:text-4xl">
-                Our mission
-              </h3>
-              <p class="mt-5 text-lg leading-8 text-slate-600">
-                To create thoughtful, conversion-minded digital experiences that
-                feel premium, human, and unmistakably aligned with each brand.
-              </p>
-            </div>
-          </div>
+          </article>
         </div>
       </section>
 
@@ -348,23 +332,23 @@
               <p
                 class="text-sm font-bold uppercase tracking-[0.24em] text-slate-600"
               >
-                Expertise
+                Roadmap
               </p>
               <h2
                 class="mt-3 text-3xl font-semibold text-theme-text sm:text-5xl"
               >
-                Our services
+                Three steps to French
               </h2>
             </div>
             <p class="max-w-xl text-lg leading-8 text-slate-600">
-              We shape digital experiences from first impression to final
-              conversion, with strategy, design, and performance in every layer.
+              Start with a clear placement, follow a focused program, and build
+              the confidence to move forward with French in real life.
             </p>
           </div>
 
-          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div class="grid gap-6 md:grid-cols-3">
             <article
-              class="group relative overflow-hidden bg-theme-primary-soft p-8"
+              class="group relative overflow-hidden bg-theme-primary-soft p-8 shadow-[0_18px_40px_rgba(17,19,23,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_48px_rgba(17,19,23,0.12)]"
             >
               <p
                 class="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-700"
@@ -372,10 +356,11 @@
                 01
               </p>
               <h3 class="text-2xl font-semibold text-[#111827]">
-                UI/UX Design
+                Book a placement call
               </h3>
               <p class="mt-4 text-base leading-7 text-slate-700">
-                Experience design tailored to user behavior and brand clarity.
+                Start with a short assessment so we can understand your level,
+                goals, and the best path forward.
               </p>
               <span
                 class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/45"
@@ -383,7 +368,7 @@
               >
             </article>
             <article
-              class="group relative overflow-hidden bg-white p-8 shadow-sm"
+              class="group relative overflow-hidden bg-white p-8 shadow-[0_18px_40px_rgba(17,19,23,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_48px_rgba(17,19,23,0.12)]"
             >
               <p
                 class="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-700"
@@ -391,10 +376,11 @@
                 02
               </p>
               <h3 class="text-2xl font-semibold text-[#111827]">
-                Graphics Design
+                Follow your tailored plan
               </h3>
               <p class="mt-4 text-base leading-7 text-slate-700">
-                Visual systems that feel premium, consistent, and memorable.
+                Learn with structured guidance, practical exercises, and
+                coaching focused on speaking, writing, and exam readiness.
               </p>
               <span
                 class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/20"
@@ -402,7 +388,7 @@
               >
             </article>
             <article
-              class="group relative overflow-hidden bg-theme-primary-soft p-8"
+              class="group relative overflow-hidden bg-theme-primary-soft p-8 shadow-[0_18px_40px_rgba(17,19,23,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_48px_rgba(17,19,23,0.12)]"
             >
               <p
                 class="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-700"
@@ -410,69 +396,15 @@
                 03
               </p>
               <h3 class="text-2xl font-semibold text-[#111827]">
-                Illustration
+                Reach your French goals
               </h3>
               <p class="mt-4 text-base leading-7 text-slate-700">
-                Custom visual storytelling that brings personality to your
-                brand.
+                Gain confidence, improve your chances for certification, and
+                move forward with real-world French fluency.
               </p>
               <span
                 class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/45"
                 >03</span
-              >
-            </article>
-            <article
-              class="group relative overflow-hidden bg-white p-8 shadow-sm"
-            >
-              <p
-                class="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-700"
-              >
-                04
-              </p>
-              <h3 class="text-2xl font-semibold text-theme-text">Branding</h3>
-              <p class="mt-4 text-base leading-7 text-slate-700">
-                Positioning, identity, and messaging built for long-term growth.
-              </p>
-              <span
-                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/20"
-                >04</span
-              >
-            </article>
-            <article
-              class="group relative overflow-hidden bg-theme-primary-soft p-8"
-            >
-              <p
-                class="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-700"
-              >
-                05
-              </p>
-              <h3 class="text-2xl font-semibold text-[#111827]">
-                Motion Graphics
-              </h3>
-              <p class="mt-4 text-base leading-7 text-slate-700">
-                Dynamic content designed to strengthen attention and emotion.
-              </p>
-              <span
-                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/45"
-                >05</span
-              >
-            </article>
-            <article
-              class="group relative overflow-hidden bg-white p-8 shadow-sm"
-            >
-              <p
-                class="mb-6 text-sm font-black uppercase tracking-[0.22em] text-slate-700"
-              >
-                06
-              </p>
-              <h3 class="text-2xl font-semibold text-theme-text">Web Design</h3>
-              <p class="mt-4 text-base leading-7 text-slate-700">
-                Fast, modern experiences built to perform beautifully on every
-                screen.
-              </p>
-              <span
-                class="absolute bottom-2 right-3 text-[7rem] font-black leading-none text-theme-primary/20"
-                >06</span
               >
             </article>
           </div>
@@ -611,152 +543,6 @@
             class="inline-flex items-center justify-center rounded-full bg-theme-primary-soft px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#111827] transition hover:bg-theme-primary-soft-strong"
             >View Gallery</a
           >
-        </div>
-      </section>
-
-      <section id="process" class="bg-white py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="mb-12 text-center">
-            <p
-              class="text-sm font-bold uppercase tracking-[0.24em] text-slate-600"
-            >
-              Our design
-            </p>
-            <h2 class="mt-3 text-3xl font-semibold text-[#111827] sm:text-5xl">
-              Our design process
-            </h2>
-          </div>
-
-          <div class="relative hidden xl:block">
-            <div
-              class="absolute left-1/2 top-1/2 h-0.5 w-[70%] -translate-x-1/2 -translate-y-1/2 bg-theme-primary/20"
-            ></div>
-            <div class="grid grid-cols-5 gap-6">
-              <div class="text-center">
-                <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
-                >
-                  01
-                </div>
-                <p
-                  class="mt-5 text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-                >
-                  Requirement analysis
-                </p>
-              </div>
-              <div class="pt-14 text-center">
-                <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
-                >
-                  02
-                </div>
-                <p
-                  class="mt-5 text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-                >
-                  Market research
-                </p>
-              </div>
-              <div class="text-center">
-                <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
-                >
-                  03
-                </div>
-                <p
-                  class="mt-5 text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-                >
-                  Design concepts
-                </p>
-              </div>
-              <div class="pt-14 text-center">
-                <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
-                >
-                  04
-                </div>
-                <p
-                  class="mt-5 text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-                >
-                  Build prototype
-                </p>
-              </div>
-              <div class="text-center">
-                <div
-                  class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-theme-primary-soft text-2xl font-black text-[#111827]"
-                >
-                  05
-                </div>
-                <p
-                  class="mt-5 text-sm font-black uppercase tracking-[0.18em] text-[#111827]"
-                >
-                  Launch product
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid gap-4 xl:hidden">
-            <div class="bg-theme-primary-soft p-5">
-              <p
-                class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
-              >
-                01
-              </p>
-              <p
-                class="mt-2 text-base font-black uppercase tracking-[0.14em] text-[#111827]"
-              >
-                Requirement analysis
-              </p>
-            </div>
-            <div class="bg-theme-primary-faint p-5">
-              <p
-                class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
-              >
-                02
-              </p>
-              <p
-                class="mt-2 text-base font-black uppercase tracking-[0.14em] text-[#111827]"
-              >
-                Market research
-              </p>
-            </div>
-            <div class="bg-theme-primary-soft p-5">
-              <p
-                class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
-              >
-                03
-              </p>
-              <p
-                class="mt-2 text-base font-black uppercase tracking-[0.14em] text-[#111827]"
-              >
-                Design concepts
-              </p>
-            </div>
-            <div class="bg-theme-primary-faint p-5">
-              <p
-                class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
-              >
-                04
-              </p>
-              <p
-                class="mt-2 text-base font-black uppercase tracking-[0.14em] text-[#111827]"
-              >
-                Build prototype
-              </p>
-            </div>
-            <div class="bg-theme-primary-soft p-5">
-              <p
-                class="text-sm font-black uppercase tracking-[0.22em] text-slate-700"
-              >
-                05
-              </p>
-              <p
-                class="mt-2 text-base font-black uppercase tracking-[0.14em] text-[#111827]"
-              >
-                Launch product
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

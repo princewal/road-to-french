@@ -134,6 +134,21 @@ input {
   border-color: var(--theme-primary);
 }
 
+.program-card {
+  position: relative;
+}
+
+.program-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -30% -50% auto;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 9999px;
+  background: rgba(178, 98, 45, 0.08);
+  filter: blur(30px);
+}
+
 .preloader-wrapper {
   position: fixed;
   inset: 0;

@@ -34,34 +34,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.querySelector("[data-mobile-menu]")
 
   if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener("click", () => {
-      const isOpen = !mobileMenu.classList.contains("hidden")
-      mobileMenu.classList.toggle("hidden")
-      menuToggle.setAttribute("aria-expanded", String(!isOpen))
+    const setMenuState = (isOpen) => {
+      mobileMenu.classList.toggle("hidden", !isOpen)
+      menuToggle.setAttribute("aria-expanded", String(isOpen))
+    }
+
+    menuToggle.addEventListener("click", (event) => {
+      event.preventDefault()
+      const isOpen = mobileMenu.classList.contains("hidden")
+      setMenuState(isOpen)
+    })
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        setMenuState(false)
+      })
+    })
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 1024) {
+        setMenuState(false)
+      }
     })
   }
-
-  const tabButtons = document.querySelectorAll(".tab-button")
-  const tabPanels = document.querySelectorAll(".tab-panel")
-
-  tabButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const target = button.dataset.tab
-
-      tabButtons.forEach((btn) => {
-        const active = btn === button
-        btn.classList.toggle("active", active)
-        btn.classList.toggle("text-slate-500", !active)
-        btn.classList.toggle("text-[#111827]", active)
-      })
-
-      tabPanels.forEach((panel) => {
-        const active = panel.dataset.panel === target
-        panel.classList.toggle("hidden", !active)
-        panel.classList.toggle("active", active)
-      })
-    })
-  })
 
   if (typeof GLightbox !== "undefined") {
     GLightbox({
