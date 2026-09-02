@@ -149,6 +149,32 @@ input {
   filter: blur(30px);
 }
 
+.testimonial-card,
+.testimonial-mini-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card::before,
+.testimonial-mini-card::before {
+  content: "“";
+  position: absolute;
+  top: 0.15rem;
+  left: 1.25rem;
+  z-index: 0;
+  font-size: clamp(5rem, 8vw, 9rem);
+  line-height: 1;
+  font-weight: 900;
+  color: rgba(178, 98, 45, 0.15);
+  pointer-events: none;
+}
+
+.testimonial-card > *,
+.testimonial-mini-card > * {
+  position: relative;
+  z-index: 1;
+}
+
 .preloader-wrapper {
   position: fixed;
   inset: 0;
