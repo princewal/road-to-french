@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector("header nav")
   const updateNavbar = () => {
     if (!nav) return
-    const panel = nav.querySelector(".rounded-b-\\[1.5rem\\]")
+    const panel = nav.firstElementChild
     if (!panel) return
     panel.classList.toggle("bg-white/95", window.scrollY >= 40)
     panel.classList.toggle(
@@ -32,6 +32,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const menuToggle = document.querySelector("[data-menu-toggle]")
   const mobileMenu = document.querySelector("[data-mobile-menu]")
+  const programMenus = document.querySelectorAll("header nav details")
+
+  const closeProgramMenus = () => {
+    programMenus.forEach((menu) => menu.removeAttribute("open"))
+  }
+
+  document.addEventListener("click", (event) => {
+    programMenus.forEach((menu) => {
+      if (!menu.contains(event.target)) {
+        menu.removeAttribute("open")
+      }
+    })
+  })
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeProgramMenus()
+    }
+  })
 
   if (menuToggle && mobileMenu) {
     const setMenuState = (isOpen) => {

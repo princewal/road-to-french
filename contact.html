@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Road to French and start your level assessment."
+    />
+    <title>Contact and Level Test | Road to French</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-theme-bg text-slate-800 antialiased">
+    <div class="preloader-wrapper"><div class="preloader"></div></div>
+    <div data-site-header></div>
+    <main>
+      <section
+        class="bg-theme-primary-faint px-4 pb-16 pt-40 sm:px-6 lg:px-8 lg:pt-52"
+      >
+        <div class="mx-auto max-w-7xl">
+          <p
+            class="text-sm font-bold uppercase tracking-[0.24em] text-slate-600"
+          >
+            Start here
+          </p>
+          <h1
+            class="mt-5 max-w-4xl text-5xl font-light leading-[0.95] tracking-[-0.03em] text-theme-text sm:text-7xl"
+          >
+            Find the right
+            <span class="font-bold text-theme-primary">French path.</span>
+          </h1>
+          <p class="mt-8 max-w-2xl text-xl leading-8 text-slate-700">
+            Share your goal and current level. We will help you identify the
+            right program or coaching option.
+          </p>
+        </div>
+      </section>
+      <section
+        class="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8"
+      >
+        <div>
+          <p
+            class="text-sm font-bold uppercase tracking-[0.24em] text-slate-600"
+          >
+            Level test and assessment
+          </p>
+          <h2 class="mt-3 text-4xl font-semibold text-theme-text">
+            A short conversation can make the next step clear.
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-slate-700">
+            Use this form to tell us whether you are preparing for PR, Federal
+            SLE, or a specific coaching goal.
+          </p>
+          <div class="mt-8 space-y-4 text-slate-700">
+            <p><strong>Email:</strong> hello@roadtofrench.com</p>
+            <p>
+              <strong>Assessment:</strong> ten minutes to identify your starting
+              point.
+            </p>
+            <p>
+              <strong>Groups:</strong> learners are matched by level in groups
+              of 7–9.
+            </p>
+          </div>
+        </div>
+        <form
+          action="mailto:hello@roadtofrench.com"
+          method="post"
+          enctype="text/plain"
+          class="space-y-5 rounded-3xl bg-white p-7 shadow-[0_20px_60px_rgba(17,19,23,0.06)] sm:p-10"
+        >
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="text-sm font-bold text-theme-text"
+              >Name<input
+                required
+                name="name"
+                type="text"
+                class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-theme-primary" /></label
+            ><label class="text-sm font-bold text-theme-text"
+              >Email<input
+                required
+                name="email"
+                type="email"
+                class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-theme-primary"
+            /></label>
+          </div>
+          <label class="block text-sm font-bold text-theme-text"
+            >What are you working toward?<select
+              name="goal"
+              class="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none focus:border-theme-primary"
+            >
+              <option>Permanent residency / TEF or TCF</option>
+              <option>Federal SLE</option>
+              <option>Private coaching</option>
+              <option>Not sure yet</option>
+            </select></label
+          ><label class="block text-sm font-bold text-theme-text"
+            >Current French level<input
+              name="level"
+              type="text"
+              placeholder="For example: A2, B1, or not sure"
+              class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-theme-primary" /></label
+          ><label class="block text-sm font-bold text-theme-text"
+            >Target exam or SLE profile<input
+              name="target"
+              type="text"
+              placeholder="For example: NCLC 7, BBB, or Level C oral"
+              class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-theme-primary" /></label
+          ><label class="block text-sm font-bold text-theme-text"
+            >Tell us about your timeline<textarea
+              name="message"
+              rows="5"
+              class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-theme-primary"
+            ></textarea></label
+          ><button
+            type="submit"
+            class="inline-flex rounded-full bg-theme-primary px-7 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-theme-text transition hover:bg-theme-primary-hover"
+          >
+            Send assessment request
+          </button>
+        </form>
+      </section>
+    </main>
+    <div data-site-footer></div>
+    <script type="module" src="/src/js/site.js"></script>
+  </body>
+</html>
