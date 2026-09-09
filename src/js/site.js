@@ -1,12 +1,13 @@
 import "../css/style.css"
 import "./script.js"
+import logoUrl from "../assets/images/logo.png"
 
 const header = `
   <header class="fixed inset-x-0 top-0 z-50">
     <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between rounded-b-[1.5rem] border border-white/30 bg-white/80 px-4 py-4 shadow-[0_12px_40px_rgba(17,19,23,0.05)] backdrop-blur-sm transition-all duration-300 lg:px-6">
         <a href="/index.html" class="flex items-center" aria-label="Road to French home">
-          <img src="/src/assets/images/logo.png" alt="Road to French logo" class="h-10 w-auto object-contain" />
+          <img src="${logoUrl}" alt="Road to French logo" class="h-10 w-auto object-contain" />
           <span class="ml-2 whitespace-nowrap text-sm font-bold">Road to French</span>
         </a>
         <div class="hidden items-center gap-7 lg:flex">
@@ -67,7 +68,7 @@ const footer = `
       </div>
       <div class="grid gap-10 py-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
         <div>
-          <img src="/src/assets/images/logo.png" alt="Road to French logo" class="h-12 w-auto" />
+          <img src="${logoUrl}" alt="Road to French logo" class="h-12 w-auto" />
           <p class="mt-5 max-w-md text-base leading-7 text-white/80">Structured French coaching for PR candidates, federal professionals, and learners with a clear goal.</p>
           <a href="/contact.html" class="mt-8 inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-theme-primary transition hover:bg-theme-primary-soft">Book a Call</a>
         </div>

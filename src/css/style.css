@@ -68,6 +68,16 @@ main > section {
   padding-bottom: 5rem;
 }
 
+.internal-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.internal-hero > div {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: var(--font-theme-sans);
