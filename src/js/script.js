@@ -85,4 +85,41 @@ document.addEventListener("DOMContentLoaded", () => {
       autoplayVideos: true,
     })
   }
+
+  const contactForm = document.querySelector('form[action^="mailto:"]')
+  if (contactForm) {
+    const params = new URLSearchParams(window.location.search)
+    const route = params.get("route")
+    const profile = params.get("profile")
+    const routeDetails = {
+      "route-a": {
+        level: "Starting from scratch",
+        target: "Level B profile (Route A)",
+        message:
+          "I am interested in Route A, starting from scratch and preparing toward a Level B profile.",
+      },
+      "route-b": {
+        level: "Around B1",
+        target: "Level B profile (Route B)",
+        message:
+          "I am interested in Route B, preparing from around B1 toward a Level B profile.",
+      },
+      "route-c": {
+        level: "Around B2",
+        target: "Level C profile (Route C)",
+        message:
+          "I am interested in Route C, preparing from around B2 toward a Level C profile.",
+      },
+    }
+    const selectedRoute = routeDetails[route]
+
+    if (selectedRoute) {
+      contactForm.elements.goal.value = "Federal SLE"
+      contactForm.elements.level.value = selectedRoute.level
+      contactForm.elements.target.value = profile
+        ? `${selectedRoute.target} - ${profile}`
+        : selectedRoute.target
+      contactForm.elements.message.value = selectedRoute.message
+    }
+  }
 })
