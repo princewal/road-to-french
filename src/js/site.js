@@ -22,7 +22,7 @@ const header = `
               <a href="/private-coaching.html" class="block rounded-xl px-4 py-3 text-sm font-bold text-[#111827] transition hover:bg-theme-primary-soft hover:text-theme-primary-strong">Private Coaching</a>
             </div>
           </details>
-          <a href="/about.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Coaches</a>
+          <a href="/coaches.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Coaches</a>
           <a href="/faq.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">FAQ</a>
           <a href="/contact.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Contact</a>
           <a href="/contact.html" class="inline-flex items-center justify-center rounded-full bg-theme-primary px-4 py-2.5 text-[11px] font-black uppercase tracking-[0.18em] text-theme-text transition hover:bg-theme-primary-hover">Book a Call</a>
@@ -45,7 +45,7 @@ const header = `
               <a href="/private-coaching.html" class="py-2 text-sm font-bold text-slate-700 transition hover:text-theme-primary-strong">Private Coaching</a>
             </div>
           </details>
-          <a href="/about.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Coaches</a>
+          <a href="/coaches.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Coaches</a>
           <a href="/faq.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">FAQ</a>
           <a href="/contact.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Contact</a>
         </div>
@@ -59,37 +59,21 @@ const footer = `
     <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <div class="flex flex-wrap items-center justify-center gap-4 border-b border-white/20 pb-6 text-sm font-bold uppercase tracking-[0.18em] sm:gap-8">
         <a href="/index.html" class="transition hover:text-theme-primary-soft">Home</a>
+        <a href="/coaches.html" class="transition hover:text-theme-primary-soft">Coaches</a>
         <a href="/pr.html" class="transition hover:text-theme-primary-soft">TCF/TEF · PR</a>
         <a href="/sle.html" class="transition hover:text-theme-primary-soft">Federal SLE</a>
         <a href="/private-coaching.html" class="transition hover:text-theme-primary-soft">Private Coaching</a>
-        <a href="/about.html" class="transition hover:text-theme-primary-soft">Coaches</a>
         <a href="/faq.html" class="transition hover:text-theme-primary-soft">FAQ</a>
         <a href="/contact.html" class="transition hover:text-theme-primary-soft">Contact</a>
+        <a href="/contact.html" class="transition hover:text-theme-primary-soft">Book a Call</a>
       </div>
-      <div class="grid gap-10 py-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
+      <div class="flex flex-col gap-8 py-10 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <img src="${logoUrl}" alt="Road to French logo" class="h-12 w-auto" />
           <p class="mt-5 max-w-md text-base leading-7 text-white/80">Structured French coaching for PR candidates, federal professionals, and learners with a clear goal.</p>
           <a href="/contact.html" class="mt-8 inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-theme-primary transition hover:bg-theme-primary-soft">Book a Call</a>
         </div>
         <div>
-          <h3 class="text-sm font-black uppercase tracking-[0.18em] text-white/80">Programs</h3>
-          <ul class="mt-5 space-y-3 text-base text-white/80">
-            <li><a href="/pr.html" class="transition hover:text-white">TCF/TEF · PR</a></li>
-            <li><a href="/sle.html" class="transition hover:text-white">Federal SLE</a></li>
-            <li><a href="/private-coaching.html" class="transition hover:text-white">Private Coaching</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-sm font-black uppercase tracking-[0.18em] text-white/80">Explore</h3>
-          <ul class="mt-5 space-y-3 text-base text-white/80">
-            <li><a href="/about.html" class="transition hover:text-white">Our coaches</a></li>
-            <li><a href="/faq.html" class="transition hover:text-white">FAQ</a></li>
-            <li><a href="/contact.html" class="transition hover:text-white">Level test</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-sm font-black uppercase tracking-[0.18em] text-white/80">Contact</h3>
           <p class="mt-5 text-base leading-7 text-white/80">Tell us about your goal, timeline, and current French level.</p>
           <a href="mailto:hello@roadtofrench.com" class="mt-4 inline-block text-xl font-medium text-white underline decoration-white/70 underline-offset-4">hello@roadtofrench.com</a>
         </div>

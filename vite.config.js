@@ -16,7 +16,7 @@ export default defineConfig({
         privateCoaching: resolve(root, "private-coaching.html"),
         faq: resolve(root, "faq.html"),
         contact: resolve(root, "contact.html"),
-        about: resolve(root, "about.html"),
+        coaches: resolve(root, "coaches.html"),
       },
     },
   },
