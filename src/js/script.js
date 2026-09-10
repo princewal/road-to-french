@@ -91,6 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search)
     const route = params.get("route")
     const profile = params.get("profile")
+    const goal = params.get("goal")
+    const packageName = params.get("package")
     const routeDetails = {
       "route-a": {
         level: "Starting from scratch",
@@ -120,6 +122,31 @@ document.addEventListener("DOMContentLoaded", () => {
         ? `${selectedRoute.target} - ${profile}`
         : selectedRoute.target
       contactForm.elements.message.value = selectedRoute.message
+    }
+
+    const coachingPackages = {
+      "single-session": {
+        target: "Single session - $75/hour",
+        message:
+          "I am interested in a single private coaching session at $75/hour.",
+      },
+      "5-hour-package": {
+        target: "5-hour package - $350",
+        message:
+          "I am interested in the 5-hour private coaching package at $350.",
+      },
+      "10-hour-package": {
+        target: "10-hour package - $700",
+        message:
+          "I am interested in the 10-hour private coaching package at $700.",
+      },
+    }
+    const selectedPackage = coachingPackages[packageName]
+
+    if (goal === "private-coaching" && selectedPackage) {
+      contactForm.elements.goal.value = "Private coaching"
+      contactForm.elements.target.value = selectedPackage.target
+      contactForm.elements.message.value = selectedPackage.message
     }
   }
 })
