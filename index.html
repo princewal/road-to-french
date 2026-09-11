@@ -3,8 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Modern creative agency website" />
+    <meta
+      name="description"
+      content="Structured French coaching for permanent residency, federal SLE, and confident communication."
+    />
     <meta name="author" content="Road to French" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <link rel="canonical" href="https://roadtofrench.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Road to French" />
+    <meta property="og:title" content="Road to French | French Coaching" />
+    <meta
+      property="og:description"
+      content="Structured French coaching for permanent residency, federal SLE, and confident communication."
+    />
+    <meta property="og:url" content="https://roadtofrench.com/" />
+    <meta property="og:image" content="https://roadtofrench.com/og-image.png" />
+    <meta property="og:image:alt" content="Road to French" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Road to French | French Coaching" />
+    <meta
+      name="twitter:description"
+      content="Structured French coaching for permanent residency, federal SLE, and confident communication."
+    />
+    <meta
+      name="twitter:image"
+      content="https://roadtofrench.com/og-image.png"
+    />
     <title>Road to French</title>
 
     <link rel="icon" type="image/png" href="/src/assets/images/logo.png" />
@@ -27,7 +53,13 @@
     </div>
 
     <header class="fixed inset-x-0 top-0 z-50">
-      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <a href="#main-content" class="sr-only focus:not-sr-only"
+        >Skip to main content</a
+      >
+      <nav
+        aria-label="Primary navigation"
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
+      >
         <div
           class="flex items-center justify-between rounded-b-[1.5rem] border border-white/30 bg-white/80 px-4 py-4 shadow-[0_12px_40px_rgba(17,19,23,0.05)] backdrop-blur-sm transition-all duration-300 lg:px-6"
         >
@@ -112,6 +144,7 @@
             <button
               type="button"
               data-menu-toggle
+              aria-controls="mobile-menu"
               class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800"
               aria-label="Open menu"
               aria-expanded="false"
@@ -132,6 +165,7 @@
 
         <div
           data-mobile-menu
+          id="mobile-menu"
           class="hidden overflow-hidden rounded-b-3xl border border-slate-200 bg-white shadow-xl lg:hidden"
         >
           <div class="flex flex-col gap-2 px-5 py-4">
@@ -185,7 +219,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main-content">
       <section
         id="hero"
         class="relative overflow-hidden bg-cover bg-center bg-no-repeat"
