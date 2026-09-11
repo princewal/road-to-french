@@ -24,6 +24,7 @@ const header = `
             </div>
           </details>
           <a href="/coaches.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Coaches</a>
+          <a href="/level-test.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Level Test</a>
           <a href="/faq.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">FAQ</a>
           <a href="/contact.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Contact</a>
           <a href="/contact.html" class="inline-flex items-center justify-center rounded-full bg-theme-primary px-4 py-2.5 text-[11px] font-black uppercase tracking-[0.18em] text-theme-text transition hover:bg-theme-primary-hover">Book a Call</a>
@@ -47,6 +48,7 @@ const header = `
             </div>
           </details>
           <a href="/coaches.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Coaches</a>
+          <a href="/level-test.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Level Test</a>
           <a href="/faq.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">FAQ</a>
           <a href="/contact.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Contact</a>
         </div>
@@ -61,6 +63,7 @@ const footer = `
       <div class="flex flex-wrap items-center justify-center gap-4 border-b border-white/20 pb-6 text-sm font-bold uppercase tracking-[0.18em] sm:gap-8">
         <a href="/index.html" class="transition hover:text-theme-primary-soft">Home</a>
         <a href="/coaches.html" class="transition hover:text-theme-primary-soft">Coaches</a>
+        <a href="/level-test.html" class="transition hover:text-theme-primary-soft">Level Test</a>
         <a href="/pr.html" class="transition hover:text-theme-primary-soft">TCF/TEF · PR</a>
         <a href="/sle.html" class="transition hover:text-theme-primary-soft">Federal SLE</a>
         <a href="/private-coaching.html" class="transition hover:text-theme-primary-soft">Private Coaching</a>
