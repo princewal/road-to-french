@@ -4,7 +4,8 @@ import logoUrl from "../assets/images/logo.png"
 
 const header = `
   <header class="fixed inset-x-0 top-0 z-50">
-    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+    <nav aria-label="Primary navigation" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between rounded-b-[1.5rem] border border-white/30 bg-white/80 px-4 py-4 shadow-[0_12px_40px_rgba(17,19,23,0.05)] backdrop-blur-sm transition-all duration-300 lg:px-6">
         <a href="/index.html" class="flex items-center" aria-label="Road to French home">
           <img src="${logoUrl}" alt="Road to French logo" class="h-10 w-auto object-contain" />
@@ -29,12 +30,12 @@ const header = `
         </div>
         <div class="flex items-center gap-3 lg:hidden">
           <a href="/contact.html" class="inline-flex items-center justify-center rounded-full bg-theme-primary px-3 py-2 text-[10px] font-black uppercase tracking-[0.16em] text-theme-text transition hover:bg-theme-primary-hover">Book</a>
-          <button type="button" data-menu-toggle class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800" aria-label="Open menu" aria-expanded="false">
+          <button type="button" data-menu-toggle aria-controls="mobile-menu" class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800" aria-label="Open menu" aria-expanded="false">
             <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
           </button>
         </div>
       </div>
-      <div data-mobile-menu class="hidden overflow-hidden rounded-b-3xl border border-slate-200 bg-white shadow-xl lg:hidden">
+      <div data-mobile-menu id="mobile-menu" class="hidden overflow-hidden rounded-b-3xl border border-slate-200 bg-white shadow-xl lg:hidden">
         <div class="flex flex-col gap-2 px-5 py-4">
           <a href="/index.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Home</a>
           <details>
