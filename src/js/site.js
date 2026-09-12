@@ -79,7 +79,7 @@ const footer = `
         </div>
         <div>
           <p class="mt-5 text-base leading-7 text-white/80">Tell us about your goal, timeline, and current French level.</p>
-          <a href="mailto:hello@roadtofrench.com" class="mt-4 inline-block text-xl font-medium text-white underline decoration-white/70 underline-offset-4">hello@roadtofrench.com</a>
+          <a href="mailto:info@roadtofrench.com" class="mt-4 inline-block text-xl font-medium text-white underline decoration-white/70 underline-offset-4">info@roadtofrench.com</a>
         </div>
       </div>
       <div class="border-t border-white/20 pt-8"><p class="text-sm text-white/80">© 2026 Road to French. All rights reserved.</p></div>
