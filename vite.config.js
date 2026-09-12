@@ -17,6 +17,7 @@ export default defineConfig({
         faq: resolve(root, "faq.html"),
         contact: resolve(root, "contact.html"),
         coaches: resolve(root, "coaches.html"),
+        levelTest: resolve(root, "level-test.html"),
       },
     },
   },
