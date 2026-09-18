@@ -148,5 +148,39 @@ document.addEventListener("DOMContentLoaded", () => {
       contactForm.elements.target.value = selectedPackage.target
       contactForm.elements.message.value = selectedPackage.message
     }
+
+    const contactPresets = {
+      chat: {
+        goal: "Chat with us",
+        message: "Just want to have a quick chat.",
+      },
+      "not-sure": {
+        goal: "Not sure yet",
+        message:
+          "I am not sure which program or starting point is right for me. Please help me choose.",
+      },
+      "pr-program": {
+        goal: "Permanent residency / TEF or TCF",
+        target: "NCLC 7 / PR preparation",
+        message:
+          "I am interested in the PR program and would like help choosing my starting point.",
+      },
+    }
+    const selectedPreset = contactPresets[goal]
+
+    if (selectedPreset && !selectedRoute && !selectedPackage) {
+      contactForm.elements.goal.value = selectedPreset.goal
+      if (selectedPreset.target) {
+        contactForm.elements.target.value = selectedPreset.target
+      }
+      contactForm.elements.message.value = selectedPreset.message
+    }
+
+    if (goal === "federal-sle" && !selectedRoute) {
+      contactForm.elements.goal.value = "Federal SLE"
+      contactForm.elements.target.value = "SLE preparation"
+      contactForm.elements.message.value =
+        "I would like to discuss Federal SLE preparation."
+    }
   }
 })

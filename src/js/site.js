@@ -26,11 +26,11 @@ const header = `
           <a href="/coaches.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Coaches</a>
           <a href="/level-test.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Level Test</a>
           <a href="/faq.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">FAQ</a>
-          <a href="/contact.html" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Contact</a>
-          <a href="/contact.html" class="inline-flex items-center justify-center rounded-full bg-theme-primary px-4 py-2.5 text-[11px] font-black uppercase tracking-[0.18em] text-theme-text transition hover:bg-theme-primary-hover">Book a Call</a>
+          <a href="/contact.html?goal=not-sure" class="nav-link text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Contact</a>
+          <a href="/contact.html?goal=chat" class="inline-flex items-center justify-center rounded-full bg-theme-primary px-4 py-2.5 text-[11px] font-black uppercase tracking-[0.18em] text-theme-text transition hover:bg-theme-primary-hover">Book a Call</a>
         </div>
         <div class="flex items-center gap-3 lg:hidden">
-          <a href="/contact.html" class="inline-flex items-center justify-center rounded-full bg-theme-primary px-3 py-2 text-[10px] font-black uppercase tracking-[0.16em] text-theme-text transition hover:bg-theme-primary-hover">Book</a>
+          <a href="/contact.html?goal=chat" class="inline-flex items-center justify-center rounded-full bg-theme-primary px-3 py-2 text-[10px] font-black uppercase tracking-[0.16em] text-theme-text transition hover:bg-theme-primary-hover">Book</a>
           <button type="button" data-menu-toggle aria-controls="mobile-menu" class="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800" aria-label="Open menu" aria-expanded="false">
             <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
           </button>
@@ -50,7 +50,7 @@ const header = `
           <a href="/coaches.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Coaches</a>
           <a href="/level-test.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Level Test</a>
           <a href="/faq.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">FAQ</a>
-          <a href="/contact.html" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Contact</a>
+          <a href="/contact.html?goal=not-sure" class="nav-link py-2 text-sm font-black uppercase tracking-[0.18em] text-[#111827]">Contact</a>
         </div>
       </div>
     </nav>
@@ -68,14 +68,14 @@ const footer = `
         <a href="/sle.html" class="transition hover:text-theme-primary-soft">Federal SLE</a>
         <a href="/private-coaching.html" class="transition hover:text-theme-primary-soft">Private Coaching</a>
         <a href="/faq.html" class="transition hover:text-theme-primary-soft">FAQ</a>
-        <a href="/contact.html" class="transition hover:text-theme-primary-soft">Contact</a>
-        <a href="/contact.html" class="transition hover:text-theme-primary-soft">Book a Call</a>
+        <a href="/contact.html?goal=not-sure" class="transition hover:text-theme-primary-soft">Contact</a>
+        <a href="/contact.html?goal=chat" class="transition hover:text-theme-primary-soft">Book a Call</a>
       </div>
       <div class="flex flex-col gap-8 py-10 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <img src="${logoUrl}" alt="Road to French logo" class="h-12 w-auto" />
           <p class="mt-5 max-w-md text-base leading-7 text-white/80">Structured French coaching for PR candidates, federal professionals, and learners with a clear goal.</p>
-          <a href="/contact.html" class="mt-8 inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-theme-primary transition hover:bg-theme-primary-soft">Book a Call</a>
+          <a href="/contact.html?goal=chat" class="mt-8 inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-theme-primary transition hover:bg-theme-primary-soft">Book a Call</a>
         </div>
         <div>
           <p class="mt-5 text-base leading-7 text-white/80">Tell us about your goal, timeline, and current French level.</p>
