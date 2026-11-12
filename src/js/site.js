@@ -83,8 +83,8 @@ const footer = `
       </div>
       <div class="flex flex-col gap-6 border-t border-white/20 pt-8 lg:flex-row lg:items-center lg:justify-between">
         <div class="flex items-center gap-4 text-2xl text-white/80">
-          <a href="https://www.facebook.com/profile.php?id=61595793366862" target="_blank" class="transition hover:text-white" aria-label="Facebook"><iconify-icon icon="ri:facebook-fill"></iconify-icon></a>
-          <a href="#" class="transition hover:text-white" aria-label="Instagram"><iconify-icon icon="ri:instagram-fill"></iconify-icon></a>
+          <a href="https://www.facebook.com/profile.php?id=61596065374578" target="_blank" class="transition hover:text-white" aria-label="Facebook"><iconify-icon icon="ri:facebook-fill"></iconify-icon></a>
+          <a href="https://www.instagram.com/road_to_french/" target="_blank" class="transition hover:text-white" aria-label="Instagram"><iconify-icon icon="ri:instagram-fill"></iconify-icon></a>
         </div>
         <p class="text-sm text-white/80">© 2026 Road to French. All rights reserved.</p>
       </div>
