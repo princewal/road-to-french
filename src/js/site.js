@@ -81,10 +81,23 @@ const footer = `
           <a href="mailto:info@roadtofrench.com" class="mt-4 inline-block text-xl font-medium text-white underline decoration-white/70 underline-offset-4">info@roadtofrench.com</a>
         </div>
       </div>
-      <div class="border-t border-white/20 pt-8"><p class="text-sm text-white/80">© 2026 Road to French. All rights reserved.</p></div>
+      <div class="flex flex-col gap-6 border-t border-white/20 pt-8 lg:flex-row lg:items-center lg:justify-between">
+        <div class="flex items-center gap-4 text-2xl text-white/80">
+          <a href="https://www.facebook.com/profile.php?id=61595793366862" target="_blank" class="transition hover:text-white" aria-label="Facebook"><iconify-icon icon="ri:facebook-fill"></iconify-icon></a>
+          <a href="#" class="transition hover:text-white" aria-label="Instagram"><iconify-icon icon="ri:instagram-fill"></iconify-icon></a>
+        </div>
+        <p class="text-sm text-white/80">© 2026 Road to French. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 `
 
 document.querySelector("[data-site-header]").innerHTML = header
 document.querySelector("[data-site-footer]").innerHTML = footer
+
+if (!customElements.get("iconify-icon")) {
+  const iconifyScript = document.createElement("script")
+  iconifyScript.src =
+    "https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+  document.head.append(iconifyScript)
+}
