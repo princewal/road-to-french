@@ -107,11 +107,15 @@
           </div>
         </div>
         <form
-          action="mailto:info@roadtofrench.com"
-          method="post"
-          enctype="text/plain"
+          action="https://formsubmit.co/info@roadtofrench.com"
+          method="POST"
           class="space-y-5 rounded-3xl bg-theme-surface p-7 shadow-[0_20px_60px_rgba(17,19,23,0.06)] sm:p-10"
         >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New assessment request"
+          />
           <div class="grid gap-5 sm:grid-cols-2">
             <label class="text-sm font-bold text-theme-text"
               >Name<input
@@ -122,7 +126,7 @@
             ><label class="text-sm font-bold text-theme-text"
               >Email<input
                 required
-                name="email"
+                name="_replyto"
                 type="email"
                 class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-theme-primary"
             /></label>
